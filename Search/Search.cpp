@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 void FillRand(int arr[], const int N);
 void PrintArr(int arr[], const int N);
@@ -41,7 +41,7 @@ void Search(int arr[], const int N)
 	int total;
 	for (int i = 0; i < N; i++)
 	{
-		if (AlreadyDone(arr, i)) continue; //Åñëè ÷èñëî óæå ó÷òåíî, òî åãî íóæíî ïðîïóñòèòü
+		if (AlreadyDone(arr, i)) continue; //Ð•ÑÐ»Ð¸ Ñ‡Ð¸ÑÐ»Ð¾ ÑƒÐ¶Ðµ ÑƒÑ‡Ñ‚ÐµÐ½Ð¾, Ñ‚Ð¾ ÐµÐ³Ð¾ Ð½ÑƒÐ¶Ð½Ð¾ Ð¿Ñ€Ð¾Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ
 		total = 0;
 		for (int j = i; j < N; j++)
 		{
@@ -50,7 +50,7 @@ void Search(int arr[], const int N)
 				total++;
 			}
 		}
-		if (total!=1) cout << "×èñëî: " << arr[i] << "\t\t" << "Êîëè÷åñòâî ïîâòîðåíèé â ìàññèâå: " << total << endl;
-		else cout << "×èñëî: " << arr[i] << "\t\t" << "Íå ïîâòîðÿåòñÿ â ìàññèâå" << endl; //Ìîæíî óáðàòü, ïî óñëîâèþ çàäà÷è íå íóæíà
+		if (total!=1) cout << "Ð§Ð¸ÑÐ»Ð¾: " << arr[i] << "\t\t" << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÐµÐ½Ð¸Ð¹ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " << total << endl;
+		else cout << "Ð§Ð¸ÑÐ»Ð¾: " << arr[i] << "\t\t" << "ÐÐµ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ" << endl; //ÐœÐ¾Ð¶Ð½Ð¾ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ, Ð¿Ð¾ ÑƒÑÐ»Ð¾Ð²Ð¸ÑŽ Ð·Ð°Ð´Ð°Ñ‡Ð¸ Ð½Ðµ Ð½ÑƒÐ¶Ð½Ð°
 	}
 }
